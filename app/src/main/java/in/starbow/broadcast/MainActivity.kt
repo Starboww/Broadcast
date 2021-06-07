@@ -16,14 +16,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.lang.Exception
-const val Topic = "/topics/broadcast"
+
 class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
+        var pin: String? = intent.getStringExtra("pin")
+        Log.d("MAIN","$pin")
+        var Topic = "/topics/$pin"
         FirebaseMessaging.getInstance().subscribeToTopic(Topic)
         var broadCastBtn=findViewById<Button>(R.id.btnBroadCast)
         var tit = findViewById<TextInputEditText>(R.id.edTitleTxt)
@@ -31,7 +33,7 @@ class MainActivity : AppCompatActivity() {
        broadCastBtn.setOnClickListener {
            val title = tit.text.toString()
            val message = msg.text.toString()
-           Log.d("DEBB","$title"+" "+"$message");
+           Log.d("DEB","$title"+" "+"$message");
            if(title.isNotEmpty()&&message.isNotEmpty())
            {
                 pushNotification(NotificationData(title, message), Topic).also {
