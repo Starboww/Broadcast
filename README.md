@@ -1,6 +1,17 @@
 # Broadcast
 A app that will broadcast your message to all nearby users of  the app  
 
+# Libraries used
+-> Coroutines
+<br>
+-> Retrofit
+<br>
+-> Gson
+<br>
+->Firebase Cloud Messaging
+<br>
+->Material UI
+
 #Screenshots
 
 ![scr5](https://user-images.githubusercontent.com/48099786/121035878-ef2e2780-c7cb-11eb-9463-76dccc024c02.jpeg)
