@@ -1,5 +1,5 @@
 # Broadcast
-A app that will broadcast your message to all nearby users of  the app  
+A app that will broadcast your message to all nearby users of  the app  use have to use pincode/zipcode of your area for using the app
 
 # Libraries used
 -> Coroutines
