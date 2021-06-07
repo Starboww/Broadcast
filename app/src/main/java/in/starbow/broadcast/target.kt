@@ -10,12 +10,12 @@ class target : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_target)
         var x : String? = intent.getStringExtra("title")
-        var y : String? = intent.getStringExtra("message")
+        var y : String? = intent.getStringExtra("msg")
         val textTitle = findViewById<TextView>(R.id.tvTitle)
         val textDescp = findViewById<TextView>(R.id.tvDescription)
-        textTitle.text= textTitle.toString()
-        textDescp.text= textDescp.toString()
-        Log.d("Target","$x");
+        textTitle.text= x.toString()
+        textDescp.text= y.toString()
+        Log.d("Target","$y");
 
     }
 }
