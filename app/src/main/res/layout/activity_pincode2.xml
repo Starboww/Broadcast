@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="4dp"
+            android:text="Pincode"
+            android:textColor="@color/colorAccent"
+            android:textSize="34sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:id="@+id/titleInpLay"
+            app:hintTextColor="@color/colorAccent"
+            app:boxStrokeColor="@color/colorAccent"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pincode"
+                android:hint="Enter Your Pincode"
+                android:paddingStart="8dp"
+                android:inputType="textCapWords"
+                android:paddingEnd="8dp"
+                android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:baselineAlignBottom="true"
+            android:id="@+id/doneBtn"
+            android:layout_gravity="center"
+            android:layout_marginRight="40dp"
+            android:tint="@color/colorAccent"
+            app:rippleColor="@color/colorAccent"
+            android:layout_margin="32dp"
+            android:src="@drawable/ic_baseline_trending_flat_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
