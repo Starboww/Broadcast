@@ -19,10 +19,11 @@ class FirebaseService : FirebaseMessagingService(){
     override fun onMessageReceived(message: RemoteMessage) {
         super.onMessageReceived(message)
 
-        val intent = Intent(this,MainActivity::class.java)
+        val intent = Intent(this,target::class.java)
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val notificationID = Random.nextInt()
-
+         intent.putExtra("title",message.data["title"])
+         intent.putExtra("msg",message.data["message"])
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O)
         {
             createNotificationChannel(notificationManager)
@@ -38,6 +39,7 @@ class FirebaseService : FirebaseMessagingService(){
             .setContentIntent(pendingIntent)
             .build()
         notificationManager.notify(notificationID,notification)
+
     }
     //TODO: Add build check
 @RequiresApi(Build.VERSION_CODES.O)

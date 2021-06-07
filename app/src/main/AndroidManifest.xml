@@ -9,11 +9,11 @@
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
-            android:usesCleartextTraffic="true"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/Theme.Broadcast">
-
+            android:theme="@style/Theme.Broadcast"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".target"></activity>
 
         <service
                 android:name=".FirebaseService"
@@ -23,16 +23,15 @@
                 <action android:name="com.google.android.c2dm.intent.RECIEVE" />
             </intent-filter>
         </service>
-         <activity android:name=".pincode">
-             <intent-filter>
-                 <action android:name="android.intent.action.MAIN" />
 
-                 <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
-         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".pincode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
