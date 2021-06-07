@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Broadcast">
         <service android:name=".FirebaseService"
-            android:permission="com.google.c2dm.Permission.SEND">
+            android:permission="com.google.android.c2dm.Permission.SEND">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-                <action android:name="com.google.android.c2dm.RECIEVE"/>
+                <action android:name="com.google.android.c2dm.intent.RECIEVE"/>
             </intent-filter>
         </service>
         <activity android:name=".MainActivity">
