@@ -11,8 +11,12 @@ A app that will broadcast your message to all nearby users of  the app. <br>  Yo
 ->Firebase Cloud Messaging
 <br>
 ->Material UI
-
-#Screenshots
+<br>
+# App video
+https://drive.google.com/drive/folders/1kKXkFeb-dM5kQ_qlrAVTM2Ku-FnjgYCS?usp=sharing
+<br>
+<br>
+# Screenshots
 
 ![scr5](https://user-images.githubusercontent.com/48099786/121035878-ef2e2780-c7cb-11eb-9463-76dccc024c02.jpeg)
 ![scr1](https://user-images.githubusercontent.com/48099786/121035884-f05f5480-c7cb-11eb-92a1-6041db744c2d.jpeg)
